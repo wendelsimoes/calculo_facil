@@ -10,10 +10,18 @@ import { AppComponent } from './app.component';
 import { UndefinedLimitsModule } from './undefined-limits/undefined-limits.module';
 import { PlaceDerivativesModule } from './place-derivatives/place-derivatives.module';
 import { DerivativeHeroModule } from './derivative-hero/derivative-hero.module';
+import { BoardsFactoryModule } from './boards-factory/boards-factory.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, UndefinedLimitsModule, PlaceDerivativesModule, DerivativeHeroModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    UndefinedLimitsModule,
+    PlaceDerivativesModule,
+    DerivativeHeroModule,
+    BoardsFactoryModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
