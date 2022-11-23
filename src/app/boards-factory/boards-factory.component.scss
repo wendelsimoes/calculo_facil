@@ -6,7 +6,7 @@
 }
 
 .steps {
-  height: 50%;
+  height: 60%;
   width: 300vw;
   background-color: #f4f5f8;
 }
@@ -69,4 +69,27 @@
   outline: 6px solid #cbcbce;
   outline-offset: -6px;
   border-radius: 100%;
+}
+
+.squeezer {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+}
+
+.piston {
+  background-color: #cacbcf;
+  height: 30px;
+  width: 15%;
+}
+
+.squeezer-bottom {
+  height: 30px;
+  width: 100%;
+  background-color: #cacbcf;
+  border: 6px solid #383a3e;
 }
