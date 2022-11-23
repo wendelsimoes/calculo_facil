@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true" [scrollY]="false" [ngClass]="levelEnded ? 'cloud-background' : ''">
+  <div *ngIf="!levelEnded" class="green-board">
+    <div
+      class="font-lg margin-bottom light-green-board low-padding"
+      cdkDropList
+      #challenge1Monomials="cdkDropList"
+      [cdkDropListConnectedTo]="[allMonomialsList]"
+      [cdkDropListData]="currentChallenge1Monomials"
+      (cdkDropListDropped)="drop($event, 1)">
+      <div [mathjax]="'$'+currentChallenge1.challenge+'$'" class="margin-bottom"></div>
+      <div [mathjax]="'$'+currentChallenge1Monomials.join('')+'$'"></div>
+    </div>
+    <div
+      class="font-lg margin-bottom light-green-board low-padding"
+      cdkDropList
+      #challenge2Monomials="cdkDropList"
+      [cdkDropListConnectedTo]="[allMonomialsList]"
+      [cdkDropListData]="currentChallenge2Monomials"
+      (cdkDropListDropped)="drop($event, 2)">
+      <div [mathjax]="'$'+currentChallenge2.challenge+'$'" class="margin-bottom"></div>
+      <div [mathjax]="'$'+currentChallenge2Monomials.join('')+'$'"></div>
+    </div>
+    <div
+      class="font-lg margin-bottom light-green-board low-padding"
+      cdkDropList
+      #challenge3Monomials="cdkDropList"
+      [cdkDropListConnectedTo]="[allMonomialsList]"
+      [cdkDropListData]="currentChallenge3Monomials"
+      (cdkDropListDropped)="drop($event, 3)">
+      <div [mathjax]="'$'+currentChallenge3.challenge+'$'" class="margin-bottom"></div>
+      <div [mathjax]="'$'+currentChallenge3Monomials.join('')+'$'"></div>
+    </div>
+
+    <div cdkDropList #allMonomialsList="cdkDropList"
+    [cdkDropListConnectedTo]="[challenge1Monomials, challenge2Monomials, challenge3Monomials]"
+    [cdkDropListData]="currentChallengesMonomials" class="flex wrap">
+      <span *ngFor="let monomial of currentChallengesMonomials"
+      class="font-md light-green-board low-padding inline-block margin-all"
+      [mathjax]="'$'+monomial+'$'" cdkDrag [cdkDragData]="monomial"></span>
+    </div>
+  </div>
+
+  <div *ngIf="levelEnded" class="flex column space-around max-height black-text padding">
+    <div class="pause-dialog">
+      <p class="font-x-lg text-yellow bold-text center-text">NÍVEL {{ level - 1 }} COMPLETO</p>
+      <p class="font-lg text-blue bold-text center-text">Continue para o nível {{ level }}</p>
+      <div class="flex space-around">
+        <ion-button class="background-blue" [routerLink]="['/tabs', 'practice']">Menu</ion-button>
+        <ion-button class="background-green" (click)="newLevel()">Continuar</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

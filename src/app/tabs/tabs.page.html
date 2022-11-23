@@ -1,0 +1,21 @@
+<ion-tabs ng-hide="$root.hideTabs" (ionTabsWillChange)="setTabStyle($event.tab)">
+
+  <ion-tab-bar *ngIf="tabStyle === 'tab-theory' || tabStyle === 'tab-practice' || tabStyle === 'tab-scores'"
+   slot="bottom" class="{{ tabStyle }}">
+    <ion-tab-button tab="theory">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Teoria</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="practice">
+      <ion-icon name="game-controller"></ion-icon>
+      <ion-label>Prática</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="scores">
+      <ion-icon name="trophy"></ion-icon>
+      <ion-label>Recordes</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

@@ -1,0 +1,12 @@
+{
+  "defaultProject": "calculo_facil",
+  "projects": {
+    "calculo_facil": {
+      "name": "calculo_facil",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular"
+    }
+  }
+}
