@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  background-color: #92949c;
+  background-color: var(--ion-color-primary);
 }
 
 .steps {
@@ -92,4 +92,5 @@
   width: 100%;
   background-color: #cacbcf;
   border: 6px solid #383a3e;
+  border-radius: 5px;
 }
