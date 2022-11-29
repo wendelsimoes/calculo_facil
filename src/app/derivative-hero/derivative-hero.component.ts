@@ -36,20 +36,20 @@ export class DerivativeHeroComponent implements OnInit {
   trackAnimation = setInterval(() => {
     this.songDuration -= 0.05;
     this.leftQueue.forEach((item: GuitarQueue) => {
-      item.top += 2;
+      item.top += 0.4;
     });
     this.middleQueue.forEach((item: GuitarQueue) => {
-      item.top += 2;
+      item.top += 0.4;
     });
     this.rightQueue.forEach((item: GuitarQueue) => {
-      item.top += 2;
+      item.top += 0.4;
     });
 
     let bottomMostDerivative = "temp";
 
     const bottomMostLeft = this.leftQueue[0];
     if (bottomMostLeft !== null && bottomMostLeft !== undefined) {
-      if (bottomMostLeft.top >= 850) {
+      if (bottomMostLeft.top >= 106) {
         bottomMostDerivative = this.leftQueue[0].derivativePair.derivative;
         this.leftQueue.shift();
       }
@@ -57,7 +57,7 @@ export class DerivativeHeroComponent implements OnInit {
 
     const bottomMostMiddle = this.middleQueue[0];
     if (bottomMostMiddle !== null && bottomMostMiddle !== undefined) {
-      if (bottomMostMiddle.top >= 850) {
+      if (bottomMostMiddle.top >= 106) {
         bottomMostDerivative = this.middleQueue[0].derivativePair.derivative;
         this.middleQueue.shift();
       }
@@ -65,7 +65,7 @@ export class DerivativeHeroComponent implements OnInit {
 
     const bottomMostRight = this.rightQueue[0];
     if (bottomMostRight !== null && bottomMostRight !== undefined) {
-      if (bottomMostRight.top >= 850) {
+      if (bottomMostRight.top >= 106) {
         bottomMostDerivative = this.rightQueue[0].derivativePair.derivative;
         this.rightQueue.shift();
       }
@@ -131,7 +131,7 @@ export class DerivativeHeroComponent implements OnInit {
     const bottomMostExpressions = [this.leftQueue[0], this.middleQueue[0], this.rightQueue[0]];
     bottomMostExpressions.forEach((item, i) => {
       if (item !== null && item !== undefined) {
-        if (item.top >= 750) {
+        if (item.top >= 90) {
           if (item.derivativePair.derivative === derivative) {
             switch (buttonIndex) {
               case 1:
