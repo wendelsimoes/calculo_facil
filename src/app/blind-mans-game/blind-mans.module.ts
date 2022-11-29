@@ -2,9 +2,9 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { BoardsFactoryComponent } from './boards-factory.component';
+import { BlindMansGameComponent } from './blind-mans-game.component';
 
-import { BoardsFactoryRoutingModule } from './boards-factory-routing.module';
+import { BlindMansGameRoutingModule } from './blind-mans-game-routing.module';
 
 import { MathjaxModule } from 'mathjax-angular';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -15,11 +15,11 @@ import DerivativePairService from 'src/services/derivative-pair-service';
     IonicModule,
     CommonModule,
     FormsModule,
-    BoardsFactoryRoutingModule,
+    BlindMansGameRoutingModule,
     MathjaxModule.forRoot(/*Optional Config*/),
     DragDropModule
   ],
-  declarations: [BoardsFactoryComponent],
+  declarations: [BlindMansGameComponent],
   providers: [DerivativePairService]
 })
-export class BoardsFactoryModule { }
+export class BlindMansModule { }

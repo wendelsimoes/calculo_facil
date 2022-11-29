@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BoardsFactoryComponent } from './boards-factory.component';
+import { BlindMansGameComponent } from './blind-mans-game.component';
 
-describe('BoardsFactoryComponent', () => {
-  let component: BoardsFactoryComponent;
-  let fixture: ComponentFixture<BoardsFactoryComponent>;
+describe('BlindMansGameComponent', () => {
+  let component: BlindMansGameComponent;
+  let fixture: ComponentFixture<BlindMansGameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BoardsFactoryComponent ]
+      declarations: [ BlindMansGameComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BoardsFactoryComponent);
+    fixture = TestBed.createComponent(BlindMansGameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
