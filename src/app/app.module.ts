@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { UndefinedLimitsModule } from './undefined-limits/undefined-limits.module';
 import { PlaceDerivativesModule } from './place-derivatives/place-derivatives.module';
 import { DerivativeHeroModule } from './derivative-hero/derivative-hero.module';
-import { BlindMansModule } from './blind-mans-game/blind-mans.module';
+import { VisualNovelModule } from './visual-novel/visual-novel.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +21,7 @@ import { BlindMansModule } from './blind-mans-game/blind-mans.module';
     UndefinedLimitsModule,
     PlaceDerivativesModule,
     DerivativeHeroModule,
-    BlindMansModule],
+    VisualNovelModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

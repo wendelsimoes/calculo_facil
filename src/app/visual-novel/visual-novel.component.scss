@@ -1,0 +1,50 @@
+ion-content {
+  --background: url(../../assets/images/VisualNovels/classroom-edited.jpg) repeat 100% 100vh / cover;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.talk-image {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.dialog {
+  width: 90%;
+  background-color: #000000AA;
+  height: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.talk-text {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.background-green {
+  --border-radius: 5px;
+  --box-shadow: 3px 5px #b1b1b1;
+  font-weight: bold;
+  height: 50px;
+  font-size: large;
+  --background: var(--ion-color-success);
+}
+
+.image {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlindMansGameComponent } from './blind-mans-game.component';
+import { VisualNovelComponent } from './visual-novel.component';
 
-describe('BlindMansGameComponent', () => {
-  let component: BlindMansGameComponent;
-  let fixture: ComponentFixture<BlindMansGameComponent>;
+describe('VisualNovelComponent', () => {
+  let component: VisualNovelComponent;
+  let fixture: ComponentFixture<VisualNovelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BlindMansGameComponent ]
+      declarations: [ VisualNovelComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BlindMansGameComponent);
+    fixture = TestBed.createComponent(VisualNovelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

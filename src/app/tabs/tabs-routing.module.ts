@@ -32,8 +32,8 @@ const routes: Routes = [
         loadChildren: () => import('../derivative-hero/derivative-hero-routing.module').then(m => m.DerivativeHeroRoutingModule)
       },
       {
-        path: 'blind-mans',
-        loadChildren: () => import('../blind-mans-game/blind-mans-game-routing.module').then(m => m.BlindMansGameRoutingModule)
+        path: 'visual-novel',
+        loadChildren: () => import('../visual-novel/visual-novel-routing.module').then(m => m.VisualNovelRoutingModule)
       },
       {
         path: '',

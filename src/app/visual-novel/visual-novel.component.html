@@ -1,0 +1,11 @@
+<ion-content  [fullscreen]="true" [scrollY]="false">
+  <div class="flex-column-center">
+    <div class="talk-image">
+      <img class="image" src='../../assets/images/VisualNovels/{{novel[currentTalk].actorImage}}' alt="TalkActor">
+    </div>
+    <div class="dialog">
+      <p class="talk-text">{{novel[currentTalk].talkingText}}</p>
+      <ion-button class="background-green" (click)="continue()">Continuar</ion-button>
+    </div>
+  </div>
+</ion-content>
