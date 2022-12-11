@@ -48,5 +48,49 @@ export const DerivativeGameTalks: VisualNovelTalk[] = [
   {
     actorImage: "10.png",
     talkingText: "Sim, você pode usar fatoração, usar valores próximos do ponto, ou usar a Regra de l'Hôpital"
+  },
+  {
+    actorImage: "13.png",
+    talkingText: "Podemos analisar a função de distância com tempo e usar este conceito de limites para prever a trajetória"
+  },
+  {
+    actorImage: "13.png",
+    talkingText: "Quando o resultado da função no ponto for diferente do limite naquele ponto temos um ponto de descontinuidade na função"
+  },
+  {
+    actorImage: "14.png",
+    talkingText: "Podemos ainda usar o conceito de derivadas para analisar a curvatura dos mísseis"
+  },
+  {
+    actorImage: "14.png",
+    talkingText: "A derivada seria o coeficiente angular da reta tangente a um ponto qualquer na função"
+  },
+  {
+    actorImage: "14.png",
+    talkingText: "Podemos usar ela para prever para onde o míssel tende ao fazer uma curva"
+  },
+  {
+    actorImage: "15.png",
+    talkingText: "Temos problemas, três misseis alemães foram avistados e suas funções de movimento estão aqui"
+  },
+  {
+    actorImage: "16.png",
+    talkingText: "Uma função algebrica e duas trigonométricas, vamos derivar"
+  },
+  {
+    actorImage: "17.png",
+    talkingText: "Uma função algebrica com fração, temos um X no numerador e no denominador, vamos simplificar"
+  },
+  {
+    actorImage: "18.png",
+    talkingText: "Pronto, tambem agrupei a subtração dentro da raiz, vamos usar a regra da divisão"
+  },
+  {
+    actorImage: "19.png",
+    talkingText: "Ficamos com isso, agora basta simplificar"
+  },
+  {
+    actorImage: "20.png",
+    talkingText: "Este é o resultado final, agora para saber o coeficiente angular qualquer basta substituir o valor no ponto"
   }
 ]

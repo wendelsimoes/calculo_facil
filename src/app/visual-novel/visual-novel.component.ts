@@ -19,6 +19,12 @@ export class VisualNovelComponent implements OnInit {
     this.currentTalk += 1;
   }
 
+  back() {
+    if (this.currentTalk > 0) {
+      this.currentTalk -= 1;
+    }
+  }
+
   ngOnInit(): void {
     const visualNovelCode: number = Number.parseInt(history.state['novelCode']);
     console.log(visualNovelCode);
