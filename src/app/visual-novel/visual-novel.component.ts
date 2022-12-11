@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import ChrisAdvancedClassTalksService from 'src/services/chris-advanced-class-talks-service';
+import DerivativeGameTalksService from 'src/services/derivative-game-talks-service';
 import VisualNovelTalk from 'src/shared/visual-novel-talk';
 
 @Component({
@@ -12,7 +13,7 @@ export class VisualNovelComponent implements OnInit {
   novel!: VisualNovelTalk[];
   currentTalk: number = 0;
 
-  constructor(private chrisAdvancedClassTalksService: ChrisAdvancedClassTalksService) { }
+  constructor(private chrisAdvancedClassTalksService: ChrisAdvancedClassTalksService, private derivativeGameTalksService: DerivativeGameTalksService) { }
 
   continue() {
     this.currentTalk += 1;
@@ -23,7 +24,7 @@ export class VisualNovelComponent implements OnInit {
     console.log(visualNovelCode);
     switch (visualNovelCode) {
       case 1:
-        this.novel = this.chrisAdvancedClassTalksService.getChrisAdvancedClassTalks();
+        this.novel = this.derivativeGameTalksService.getDerivativeGameTalks();
         break;
       default:
     }

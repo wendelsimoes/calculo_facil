@@ -9,6 +9,7 @@ import { VisualNovelRoutingModule } from './visual-novel-routing.module';
 import { MathjaxModule } from 'mathjax-angular';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import ChrisAdvancedClassTalksService from 'src/services/chris-advanced-class-talks-service';
+import DerivativeGameTalksService from 'src/services/derivative-game-talks-service';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import ChrisAdvancedClassTalksService from 'src/services/chris-advanced-class-ta
     DragDropModule
   ],
   declarations: [VisualNovelComponent],
-  providers: [ChrisAdvancedClassTalksService]
+  providers: [ChrisAdvancedClassTalksService, DerivativeGameTalksService]
 })
 export class VisualNovelModule { }
