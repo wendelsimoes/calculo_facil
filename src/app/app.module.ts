@@ -11,6 +11,7 @@ import { UndefinedLimitsModule } from './undefined-limits/undefined-limits.modul
 import { PlaceDerivativesModule } from './place-derivatives/place-derivatives.module';
 import { DerivativeHeroModule } from './derivative-hero/derivative-hero.module';
 import { VisualNovelModule } from './visual-novel/visual-novel.module';
+import { EngineerDerivativeModule } from './engineer-derivative/engineer-derivative.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +22,8 @@ import { VisualNovelModule } from './visual-novel/visual-novel.module';
     UndefinedLimitsModule,
     PlaceDerivativesModule,
     DerivativeHeroModule,
-    VisualNovelModule],
+    VisualNovelModule,
+    EngineerDerivativeModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

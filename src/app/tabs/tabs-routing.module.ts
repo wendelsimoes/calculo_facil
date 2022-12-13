@@ -36,6 +36,10 @@ const routes: Routes = [
         loadChildren: () => import('../visual-novel/visual-novel-routing.module').then(m => m.VisualNovelRoutingModule)
       },
       {
+        path: 'engineer-derivative',
+        loadChildren: () => import('../engineer-derivative/engineer-derivative-routing.module').then(m => m.EngineerDerivativeRoutingModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/theory',
         pathMatch: 'full'
