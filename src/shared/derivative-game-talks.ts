@@ -92,5 +92,89 @@ export const DerivativeGameTalks: VisualNovelTalk[] = [
   {
     actorImage: "20.png",
     talkingText: "Este é o resultado final, agora para saber o coeficiente angular qualquer basta substituir o valor no ponto"
+  },
+  {
+    actorImage: "21.jpg",
+    talkingText: "Função do míssel 2, vamos derivar"
+  },
+  {
+    actorImage: "22.jpg",
+    talkingText: "Aqui usamos a regra da cadeias para derivar funções internas"
+  },
+  {
+    actorImage: "23.jpg",
+    talkingText: "Derivamos a primeira e depois a função interior, com a regra da potência e dentro da soma respectivamente"
+  },
+  {
+    actorImage: "24.jpg",
+    talkingText: "Fazemos uma substituição básica"
+  },
+  {
+    actorImage: "25.jpg",
+    talkingText: "E obtemos esta solução"
+  },
+  {
+    actorImage: "26.jpg",
+    talkingText: "E como terceiro e último míssel temos esta função"
+  },
+  {
+    actorImage: "25.jpg",
+    talkingText: "Aplicamos a regra da multiplição - a derivada da primeira vezes a segunda mais a primeira vezes a derivada da segunda"
+  },
+  {
+    actorImage: "27.jpg",
+    talkingText: "Derivando..."
+  },
+  {
+    actorImage: "28.jpg",
+    talkingText: "E aqui temos nossa última solução"
+  },
+  {
+    actorImage: "fix.png",
+    talkingText: "Boa Turing, você resolvel 3 dos problemas envolvendo os mísseis"
+  },
+  {
+    actorImage: "fix.png",
+    talkingText: "Porém o exercito alemão enviou outros 3 mísseis só que com altitude alta, então não foram detectados por nossos radares"
+  },
+  {
+    actorImage: "fix.png",
+    talkingText: "Porém o exercito alemão enviou outros 3 mísseis só que com altitude alta, então não foram detectados por nossos radares"
+  },
+  {
+    actorImage: "fix.png",
+    talkingText: "O nosso objetivo agora é minimizar os danos, pense em algo que nos permita calcular a área de impacto e explosão desses mísseis"
+  },
+  {
+    actorImage: "30.jpg",
+    talkingText: "Então esta é a primeira função a se integrar"
+  },
+  {
+    actorImage: "30.jpg",
+    talkingText: "A integral, pelo teorema fundamental do cálculo, temos que é o inverso da derivada, ou seja, se derivar e após integrar uma função, obtemos a mesma função como retorno"
+  },
+  {
+    actorImage: "31.jpg",
+    talkingText: "A integral da soma é a soma das integrais, ou seja, vamos dividir o problema em duas partes"
+  },
+  {
+    actorImage: "32.jpg",
+    talkingText: "Usando o inverso da regra da potência para derivada, podemos integrar as partes e obter este resultado"
+  },
+  {
+    actorImage: "33.jpg",
+    talkingText: "Aqui temos nossa última integral a ser desenvolvimento"
+  },
+  {
+    actorImage: "34.jpg",
+    talkingText: "Aqui nos resolvemos o inverso da derivada e colocamos para \"fora\" os 1/2 para complementar o resultado"
+  },
+  {
+    actorImage: "35.jpg",
+    talkingText: "Substituindo..."
+  },
+  {
+    actorImage: "36.jpg",
+    talkingText: "Colocando as constantes de integração..."
   }
 ]
